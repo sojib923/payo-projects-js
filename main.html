@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>main</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+        
+        <header>
+            <nav class="flex items-center justify-around">
+                <div class="flex justify-around m-4">
+                    <img class="w-16" src="assets/Group.png" alt=""> 
+                        <div class="pl-4">
+                            <h2 class="font-bold text-2xl pb-2">$45000</h2>
+                        <p class="text-gray-500">Available Balance</p>
+                        </div>
+                </div>
+                <button class="btn rounded-2s">Log Out</button>
+            </nav>
+            <section class="mt-8 px-8">
+                <h1 class="font-bold text-2xl pb-2">🔥 Welcome to Payooo!</h1>
+                <p class="text-gray-500">Enjoy easy and convenient financial services with us. <br> Cashout charge is low and </p>
+
+                <div class="cards pt-12 flex grid grid-cols-3 gap-y-4 gap-x-4">
+                    <!-- card-1 -->
+                    <div class="box border-2 border-gray-300 rounded-xl  h-22 w-32 justify-around text-center py-4 ">
+                        <img class="w-8 mx-auto" src="assets/wallet1.png" alt="">
+                        <h6 class=" text-gray-500">Add Money</h6>
+                    </div>
+                    <!-- card-2 -->
+                    <div class="box border-2 border-gray-300 rounded-xl  h-22 w-32 justify-around text-center py-4">
+                        <img class="w-8 mx-auto" src="assets/send1.png" alt="">
+                        <h6 class=" text-gray-500">Cashout</h6>
+                    </div>
+
+                     <!-- card-3 -->
+                     <div class="box border-2 border-gray-300 rounded-xl  h-22 w-32 justify-around text-center py-4">
+                        <img class="w-8 mx-auto" src="assets/money1.png" alt="">
+                        <h6 class=" text-gray-500">Transfer Money</h6>
+                    </div>
+
+                     <!-- card-4 -->
+                     <div class="box border-2 border-gray-300 rounded-xl  h-22 w-32 justify-around text-center py-4">
+                        <img class="w-8 mx-auto" src="assets/bonus1.png" alt="">
+                        <h6 class=" text-gray-500">Get Bonusy</h6>
+                    </div>
+
+                     <!-- card-5 -->
+                     <div class="box border-2 border-gray-300 rounded-xl  h-22 w-32 justify-around text-center py-4">
+                        <img class="w-8 mx-auto" src="assets/purse1.png" alt="">
+                        <h6 class=" text-gray-500">Pay Bill</h6>
+                    </div>
+
+                     <!-- card-6 -->
+                     <div class="box border-2 border-gray-300 rounded-xl  h-22 w-32 justify-around text-center py-4">
+                        <img class="w-8 mx-auto" src="assets/transaction1.png" alt="">
+                        <h6 class=" text-gray-500">Transactionsy</h6>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Add money section -->
+
+            <section class="">
+                <h1 class="mt-8 px-8">Add Money</h1>
+
+                <div class="">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                      <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                            <legend>Select Bank</legend>
+                            <select class="select">
+                                <option disabled selected>Select Bank</option>
+                                <option value="bikash">Bikash</option>
+                                <option value="Noggat">Noggat</option>
+                                <option value="DBBL">DBBL</option>
+                              </select>
+                              <fieldset class="fieldset">
+                                <label class="fieldset-label">Mobile Numbor</label>
+                                <input value="01756609822" id="mobile-number" type="number" maxlength="11" class="input" placeholder="Enter your numbor" required />
+                                <label class="fieldset-label">Digit Pin</label>
+                                <input value="1234" id="digit-pin" type="text" class="input" placeholder="Enter  Digit Pin" required />
+                                <div><a class="link link-hover">Forgot password?</a></div>
+                                <button class="btn btn-neutral border-none rounded-3xl bg-blue-500 mt-4">Add Money</button>
+                              </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+
+
+        </header>
+
+    </section>
+</body>
+</html>
