@@ -17,7 +17,7 @@
                 <div class="flex justify-around m-4">
                     <img class="w-16" src="assets/Group.png" alt=""> 
                         <div class="pl-4">
-                            <h2 class="font-bold text-2xl pb-2">$45000</h2>
+                            <h2 class="font-bold text-2xl pb-2">$ <span id="main-balance">45000</span></h2>
                         <p class="text-gray-500">Available Balance</p>
                         </div>
                 </div>
@@ -75,19 +75,21 @@
                       <div class="card w-full max-w-sm shrink-0 shadow-2xl">
                         <div class="card-body">
                             <legend>Select Bank</legend>
-                            <select class="select">
+                            <select class="select rounded-3xl">
                                 <option disabled selected>Select Bank</option>
                                 <option value="bikash">Bikash</option>
                                 <option value="Noggat">Noggat</option>
                                 <option value="DBBL">DBBL</option>
                               </select>
                               <fieldset class="fieldset">
-                                <label class="fieldset-label">Mobile Numbor</label>
-                                <input value="01756609822" id="mobile-number" type="number" maxlength="11" class="input" placeholder="Enter your numbor" required />
-                                <label class="fieldset-label">Digit Pin</label>
-                                <input value="1234" id="digit-pin" type="text" class="input" placeholder="Enter  Digit Pin" required />
+                                <label class="fieldset-label text-gray-800">Bank Account Number</label>
+                                <input id="mobile-number" type="number" maxlength="11" class="input rounded-3xl" placeholder="Enter 11 digit account number" required />
+                                <label class="fieldset-label text-gray-800">Amount</label>
+                                <input id="amount" type="number" class="input rounded-3xl" placeholder="Add Amount to withdraw" required />
+                                <label class="fieldset-label text-gray-800">Pin Number</label>
+                                <input id="Pin-Number" type="number-text" class="input rounded-3xl" placeholder="Enter  Digit Pin" required />
                                 <div><a class="link link-hover">Forgot password?</a></div>
-                                <button class="btn btn-neutral border-none rounded-3xl bg-blue-500 mt-4">Add Money</button>
+                                <button id="add-money" class="btn btn-neutral border-none rounded-3xl bg-blue-500 mt-4">Add Money</button>
                               </fieldset>
                         </div>
                       </div>
@@ -99,5 +101,6 @@
         </header>
 
     </section>
+    <script src="Script/addMoney.js"></script>
 </body>
 </html>
