@@ -29,12 +29,12 @@
 
                 <div class="cards pt-12 flex grid grid-cols-3 gap-y-4 gap-x-4">
                     <!-- card-1 -->
-                    <div class="box border-2 border-gray-300 rounded-xl  h-22 w-32 justify-around text-center py-4 ">
+                    <div id="add-money-box" class="box border-2 border-gray-300 rounded-xl  h-22 w-32 justify-around text-center py-4 ">
                         <img class="w-8 mx-auto" src="assets/wallet1.png" alt="">
                         <h6 class=" text-gray-500">Add Money</h6>
                     </div>
                     <!-- card-2 -->
-                    <div class="box border-2 border-gray-300 rounded-xl  h-22 w-32 justify-around text-center py-4">
+                    <div id="cashout-box" class="box border-2 border-gray-300 rounded-xl  h-22 w-32 justify-around text-center py-4">
                         <img class="w-8 mx-auto" src="assets/send1.png" alt="">
                         <h6 class=" text-gray-500">Cashout</h6>
                     </div>
@@ -67,7 +67,7 @@
 
             <!-- Add money section -->
 
-            <section class="">
+            <section id="addmoney" class="">
                 <h1 class="mt-8 px-8">Add Money</h1>
 
                 <div class="">
@@ -97,10 +97,28 @@
                   </div>
             </section>
 
+            <!-- casout section -->
+
+            <section id="cashout">
+                <h2>Cash out</h2>
+                <fieldset class="fieldset">
+                    <label class="fieldset-label text-gray-800">Bank Account Number</label>
+                    <input id="mobile-number" type="number" maxlength="11" class="input rounded-3xl" placeholder="Enter 11 digit account number" required />
+                    <label class="fieldset-label text-gray-800">Amount</label>
+                    <input id="amount" type="number" class="input rounded-3xl" placeholder="Add Amount to withdraw" required />
+                    <label class="fieldset-label text-gray-800">Pin Number</label>
+                    <input id="Pin-Number" type="number-text" class="input rounded-3xl" placeholder="Enter  Digit Pin" required />
+                    <div><a class="link link-hover">Forgot password?</a></div>
+                    <button id="add-money" class="btn btn-neutral border-none rounded-3xl bg-blue-500 mt-4">Cashout</button>
+                  </fieldset>
+            </section>
+
 
         </header>
 
     </section>
-    <script src="Script/addMoney.js"></script>
+    <!-- <script src="Script/addMoney.js"></script> -->
+     <script src="Script/recap.js"></script>
+     <script src="Script/toggle.js"></script>
 </body>
 </html>
